@@ -23,7 +23,6 @@ RUN mkdir -p /tmp && \
     tar xvzf apache-maven-${MAVEN_VER}-bin.tar.gz && \
     git clone https://github.com/DeemOpen/zkui.git && \
     cd /tmp/zkui && \
-    sleep 1000 && \
     /tmp/apache-maven-${MAVEN_VER}/bin/mvn clean install && \
     mv target/zkui-2.0-SNAPSHOT-jar-with-dependencies.jar ${ZKUI_DIR} && \
     mv config.cfg ${ZKUI_DIR}
