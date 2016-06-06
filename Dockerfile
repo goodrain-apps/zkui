@@ -2,11 +2,7 @@ FROM anapsix/alpine-java:jdk8
 
 MAINTAINER zhouyq <zhouyq@goodrain.com>
 
-ENV JAVA_MAJOR=8
-ENV JAVA_UPDATE=77
-ENV JAVA_BUILD=03
-
-ENV JAVA_HOME=/opt/jdk1.${JAVA_MAJOR}.0_${JAVA_UPDATE}
+ENV JAVA_HOME=/opt/jdk
 ENV MAVEN_VER=3.3.9
 ENV ZKUI_DIR=/opt/zkui
 ENV ZKUI_CFG="${ZKUI_DIR}/config.cfg"
