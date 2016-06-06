@@ -17,7 +17,7 @@ RUN apk add --no-cache tzdata && \
 RUN apk add --no-cache bash git && \
     sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
     
-RUN mkdir -p /tmp && \
+RUN mkdir -p /tmp $ZKUI_DIR && \
     cd /tmp && \
     wget http://ftp.riken.jp/net/apache/maven/maven-3/${MAVEN_VER}/binaries/apache-maven-${MAVEN_VER}-bin.tar.gz && \
     tar xvzf apache-maven-${MAVEN_VER}-bin.tar.gz && \
