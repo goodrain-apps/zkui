@@ -31,7 +31,7 @@ RUN mkdir -p /tmp && \
 RUN cd /tmp/ && \
     rm -fr /tmp/* /root/.mvn2 
     
-RUN apk add --no-cache wget curl netcat-openbsd && apk del git tzdata
+RUN apk add --no-cache wget curl netcat-openbsd && apk del --no-cache git tzdata
 
 ADD docker-entrypoint.sh /usr/bin/
 
