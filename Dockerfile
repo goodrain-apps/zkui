@@ -29,7 +29,7 @@ RUN mkdir -p /tmp $ZKUI_DIR && \
     
 # clean
 RUN cd /tmp/ && \
-    rm -fr /tmp/* /root/.mvn2 
+    rm -fr /tmp/* /root/.mvn2 /root/.m2
     
 RUN apk add --no-cache wget curl netcat-openbsd && apk del --no-cache git tzdata
 
