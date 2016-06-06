@@ -9,7 +9,7 @@ ENV JAVA_BUILD=03
 ENV JAVA_HOME=/opt/jdk1.${JAVA_MAJOR}.0_${JAVA_UPDATE}
 ENV MAVEN_VER=3.3.9
 ENV ZKUI_DIR=/opt/zkui
-ENV ZKUI_CFG="${ZKUI_DIR}/conf/config.cfg"
+ENV ZKUI_CFG="${ZKUI_DIR}/config.cfg"
 
 # timezone
 RUN apk add --no-cache tzdata && \
