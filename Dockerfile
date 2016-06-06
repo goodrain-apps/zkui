@@ -37,7 +37,7 @@ ADD docker-entrypoint.sh /usr/bin/
 
 RUN chmod +x /usr/bin/docker-entrypoint.sh 
 
-WORKDIR $ZKUI_DIR
+WORKDIR /opt/zkui
 
 EXPOSE 9090
 
