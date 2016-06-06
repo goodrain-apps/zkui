@@ -43,6 +43,6 @@ RUN chmod +x /usr/bin/docker-entrypoint.sh
 
 WORKDIR $ZKUI_DIR
 
-EXPOSE 9000
+EXPOSE 9090
 
 ENTRYPOINT ["docker-entrypoint.sh"]
